@@ -25,7 +25,7 @@ public class Check {
      */
     public static void checkPhoneNumberFormat(String phoneNumber) throws IncorrectValueException {
         try {
-            long check = Long.parseLong(phoneNumber); // Ошибка приведения вида
+            Long.parseLong(phoneNumber); // Ошибка приведения вида
         } catch (IncorrectValueException e) {
             throw new IncorrectValueException("Формат телефона пользователя введен не правильно. " +
                     "Правильный формат ввода данных 9601234567");
